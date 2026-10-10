@@ -1,0 +1,195 @@
+{
+ "staff": [
+  {
+   "name": "Hikmet Abdella",
+   "role": "Chief Executive Officer",
+   "image": "/images/team/hikmet-abdella.jpg"
+  },
+  {
+   "name": "Abel Tadelle",
+   "role": "Dir. of Financial Inclusion",
+   "image": "/images/team/abel-tadelle.jpg"
+  },
+  {
+   "name": "Melaku Kebede",
+   "role": "Program Manager – Financial Inclusion – Project Management Office",
+   "image": "/images/team/melaku-kebede.jpg"
+  },
+  {
+   "name": "Sinidu Fikadu",
+   "role": "Gender Lead",
+   "image": "/images/team/sinidu-fikadu.jpg"
+  },
+  {
+   "name": "Selamsew Tesfaye",
+   "role": "Dir. of Operations & Finance",
+   "image": "/images/team/selamsew-tesfaye.jpg"
+  },
+  {
+   "name": "Gosaye Warsa",
+   "role": "Dir. of Financial Markets",
+   "image": "/images/team/gosaye-warsa.jpg"
+  },
+  {
+   "name": "Samson Berhane",
+   "role": "Comm. & Advocacy Specialist",
+   "image": "/images/team/samson-berhane.jpg"
+  },
+  {
+   "name": "Barnabas Getu",
+   "role": "Head of Audit, Risk & Compliance",
+   "image": "/images/team/barnabas-getu.jpg"
+  },
+  {
+   "name": "Dawit Alem",
+   "role": "Financial Market Coordinator",
+   "image": "/images/team/dawit-alem.jpg"
+  },
+  {
+   "name": "Afomia Kassa",
+   "role": "Financial Inclusion Coordinator",
+   "image": "/images/team/afomia-kassa.jpg"
+  },
+  {
+   "name": "Hanna Hailu",
+   "role": "Gender Expert",
+   "image": "/images/team/hanna-hailu.jpg"
+  },
+  {
+   "name": "Hailemariam Misganaw",
+   "role": "Finance Manager",
+   "image": "/images/team/hailemariam-misganaw.jpg"
+  },
+  {
+   "name": "Eden Afework",
+   "role": "Programme Assistant",
+   "image": "/images/team/eden-afework.jpg"
+  },
+  {
+   "name": "Nurhassen Mensur",
+   "role": "Technical Lead – Financial Services Deepening",
+   "image": "/images/team/nurhassen-mensur.jpg"
+  },
+  {
+   "name": "Hanna Leykun",
+   "role": "Technical Lead – Financial Service Scaling",
+   "image": "/images/team/hanna-leykun.jpg"
+  },
+  {
+   "name": "Rahel Taddese",
+   "role": "Senior Procurement Officer",
+   "image": "/images/team/rahel-taddese.jpg"
+  },
+  {
+   "name": "Ruth Zemene",
+   "role": "Senior HR & Admin Officer",
+   "image": "/images/team/ruth-zemene.jpg"
+  },
+  {
+   "name": "Agare Kassahun",
+   "role": "Senior Executive Assistant",
+   "image": "/images/team/agare-kassahun.jpg"
+  },
+  {
+   "name": "Shalom Alemayehu",
+   "role": "Admin Assistant",
+   "image": "/images/team/shalom-alemayehu.jpg"
+  },
+  {
+   "name": "Abebayehu Milkias",
+   "role": "Logistics Assistant",
+   "image": "/images/team/abebayehu-milkias.jpg"
+  },
+  {
+   "name": "Yohannes Ameha",
+   "role": "Climate Finance Lead",
+   "image": "/images/team/yohannes-ameha.jpg"
+  },
+  {
+   "name": "Berhanu Alene",
+   "role": "Development Impact Manager",
+   "image": "/images/team/berhanu-alene.jpg"
+  },
+  {
+   "name": "Yosef Kefyalew",
+   "role": "Communications Officer",
+   "image": "/images/team/yosef-kefyalew.jpg"
+  },
+  {
+   "name": "Tazezew Abrha",
+   "role": "Senior Finance Officer",
+   "image": "/images/team/tazezew-abrha.jpg"
+  },
+  {
+   "name": "Meron Dereje",
+   "role": "Finance Assistant",
+   "image": "/images/team/meron-dereje.jpg"
+  },
+  {
+   "name": "Bezawit Eshetu",
+   "role": "Climate Finance Lead",
+   "image": "/images/team/bezawit-eshetu.jpg"
+  }
+ ],
+ "coordinators": [
+  {
+   "name": "Tadesse Hailu",
+   "role": "Regional Coordinator",
+   "region": "Benishangul Gumuz Regional State",
+   "image": "/images/team/tadesse-hailu.jpg"
+  },
+  {
+   "name": "Okello Oluch",
+   "role": "Regional Coordinator",
+   "region": "Gambella Regional State",
+   "image": "/images/team/okello-oluch.jpg"
+  },
+  {
+   "name": "Aklilu Tukela",
+   "role": "Regional Coordinator",
+   "region": "Sidama Regional State",
+   "image": "/images/team/aklilu-tukela.jpg"
+  },
+  {
+   "name": "Mubarak Ahmed",
+   "role": "Regional Coordinator",
+   "region": "Somali Regional State",
+   "image": "/images/team/mubarak-ahmed.jpg"
+  },
+  {
+   "name": "Ahmed Mohammed",
+   "role": "Regional Coordinator",
+   "region": "Afar Regional State",
+   "image": "/images/team/ahmed-mohammed.jpg"
+  },
+  {
+   "name": "Abinet Belay",
+   "role": "Regional Coordinator",
+   "region": "Amhara Regional State",
+   "image": "/images/team/abinet-belay.jpg"
+  },
+  {
+   "name": "Dr. Fekadu Mekonnen",
+   "role": "Regional Coordinator",
+   "region": "Oromia Regional State",
+   "image": "/images/team/dr-fekadu-mekonnen.jpg"
+  }
+ ],
+ "board": [
+  {
+   "name": "Admassu Tadesse",
+   "role": "Board Chairman · President Emeritus & MD, TDB Group",
+   "image": "/images/board/admassu-tadesse.png"
+  },
+  {
+   "name": "Berhane Demissie",
+   "role": "Co-Founder & Managing Partner, Cepheus Growth Capital Partners",
+   "image": "/images/board/berhane-demissie.png"
+  },
+  {
+   "name": "Maleda Bisrat",
+   "role": "Country Director Ethiopia, Tony Blair Institute for Global Change",
+   "image": "/images/board/maleda-bisrat.png"
+  }
+ ]
+}
