@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Brackets } from "@/components/Brackets";
-import { AccountOwnershipChart, CountUp } from "@/components/charts";
+import { AccountOwnershipChart, CountUp, HeroDashboard } from "@/components/charts";
 import { ArrowRight, ArrowUpRight, OutcomeIcon, Play } from "@/components/Icons";
 import { T } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
@@ -20,6 +20,18 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(47,147,81,0.35),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(143,191,168,0.18),transparent_50%)]" />
         <Container className="grid items-center gap-16 py-16 sm:py-20 lg:grid-cols-[1.15fr_1fr] lg:py-28 [&>*]:min-w-0">
           <div>
+            {latest && (
+              <Link
+                href={`/newsroom/${latest.slug}`}
+                className="group mb-8 inline-flex max-w-full items-center gap-3 rounded-full bg-white/10 py-1.5 pl-1.5 pr-4 text-sm text-sage-100 ring-1 ring-white/15 transition hover:bg-white/15"
+              >
+                <span className="shrink-0 rounded-full bg-flag-yellow px-2.5 py-0.5 text-xs font-semibold text-teal-900">
+                  Latest · {formatDate(latest.date, { day: "numeric", month: "short" })}
+                </span>
+                <span className="truncate">{latest.title}</span>
+                <ArrowRight className="size-4 shrink-0 transition group-hover:translate-x-1" />
+              </Link>
+            )}
             <Eyebrow light>
               <T k="hero.eyebrow" />
             </Eyebrow>
@@ -54,42 +66,10 @@ export default function HomePage() {
             </dl>
           </div>
 
-          {/* Image mosaic framed by the logo brackets */}
+          {/* Live data panel framed by the logo brackets */}
           <div className="relative mx-auto w-full max-w-xl">
-            <Brackets className="absolute -inset-x-10 -inset-y-8 -z-10 h-[calc(100%+4rem)] w-[calc(100%+5rem)] animate-float" strokeWidth={8} />
-            <div className="grid h-[24rem] grid-cols-6 grid-rows-6 gap-3 sm:h-[34rem] sm:gap-4">
-              <div className="relative col-span-4 row-span-4 overflow-hidden rounded-[2rem]">
-                <Image src={images["pillar-inclusion"]} alt="A woman using mobile money on her phone" fill priority sizes="(min-width: 1024px) 30vw, 66vw" className="object-cover" />
-              </div>
-              <div className="relative col-span-2 row-span-3 overflow-hidden rounded-[2rem]">
-                <Image src={images["pillar-climate"]} alt="" fill priority sizes="(min-width: 1024px) 15vw, 33vw" className="object-cover" />
-              </div>
-              <div className="relative col-span-2 row-span-3 overflow-hidden rounded-[1.25rem] bg-green-600 p-3 sm:rounded-[2rem] sm:p-4">
-                <p className="text-2xl font-semibold leading-none sm:text-5xl">
-                  <CountUp value={48.8} decimals={1} suffix="%" />
-                </p>
-                <p className="mt-2 text-[11px] leading-snug text-white/85 sm:text-sm">of adults own an account (Global Findex 2025)</p>
-              </div>
-              <div className="relative col-span-4 row-span-2 overflow-hidden rounded-[2rem]">
-                <Image src={images["pillar-capital"]} alt="" fill priority sizes="(min-width: 1024px) 30vw, 66vw" className="object-cover object-[50%_35%]" />
-              </div>
-            </div>
-
-            {latest && (
-              <Link
-                href={`/newsroom/${latest.slug}`}
-                className="group absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-2xl bg-white p-3 pr-5 text-teal-900 shadow-2xl shadow-black/30 transition hover:-translate-y-1 sm:-left-8 sm:right-auto sm:max-w-sm"
-              >
-                <span className="relative size-16 shrink-0 overflow-hidden rounded-xl">
-                  {latest.image && <Image src={latest.image} alt="" fill sizes="64px" className="object-cover" />}
-                </span>
-                <span className="min-w-0">
-                  <span className="block text-xs font-semibold uppercase tracking-wider text-green-600">Latest · {formatDate(latest.date, { day: "numeric", month: "short" })}</span>
-                  <span className="mt-0.5 line-clamp-2 text-sm font-medium leading-snug">{latest.title}</span>
-                </span>
-                <ArrowRight className="size-4 shrink-0 transition group-hover:translate-x-1" />
-              </Link>
-            )}
+            <Brackets className="pointer-events-none absolute -inset-x-10 -inset-y-10 -z-10 h-[calc(100%+5rem)] w-[calc(100%+5rem)] animate-float opacity-80" strokeWidth={8} />
+            <HeroDashboard />
           </div>
         </Container>
       </section>

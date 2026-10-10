@@ -261,6 +261,12 @@ export const esxListings = [
 
 export const climateGap = { needPerYear: 10.6, flowsPerYear: 2.3 };
 
+/** telebirr customers (millions) from Ethio Telecom's annual results. */
+export const telebirrUsers = [
+  { year: "FY2024/25", value: 54.84 },
+  { year: "FY2025/26", value: 60.6 },
+];
+
 export const headlineStats = [
   {
     value: 48.8,
